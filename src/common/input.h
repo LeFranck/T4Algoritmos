@@ -7,10 +7,10 @@
 struct input
 {
 	int** L;
-	int* cantidad;
-	int* k;
-	int* n_minimo;
-	int* largo_R;
+	int cantidad;
+	int k;
+	int n_minimo;
+	int largo_R;
 };
 
 typedef struct input Input;

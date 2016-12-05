@@ -50,14 +50,19 @@ void set_cantidad_de_elementos(Input* i, char* filename)
 
 void print_input(Input* i)
 {
-	printf("El input tiene %d elementos\n",i->cantidad);
+	printf("El input tiene %d elementos, y su parametro es %d \n",i->cantidad,i->k);
 	int j = 0;
-	printf("[ ");
-	for(j = 0; j < i->cantidad-1; j++)
+	printf("[");
+	for(j = 0; j < i->cantidad; j++)
 	{
-		printf("%d,",i->L[j]);
+		if(j < i->cantidad - 1)
+		{
+			printf("%d,",i->L[j]);
+		}else{
+			printf("%d",i->L[j]);
+		}
 	}
-	printf(" ]\n");
+	printf("]\n");
 }
 
 void destroy_input(Input* i)
