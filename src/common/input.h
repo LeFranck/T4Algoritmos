@@ -6,8 +6,11 @@
 
 struct input
 {
-	int cantidad;
-	int* parametros;
+	int** L;
+	int* cantidad;
+	int* k;
+	int* n_minimo;
+	int* largo_R;
 };
 
 typedef struct input Input;
@@ -16,7 +19,7 @@ Input* create_input(char* filename);
 
 void fill_input(Input* i,char* filename);
 
-void set_cantidad_de_pares(Input* i, char* filename);
+void set_cantidad_de_elementos(Input* i, char* filename);
 
 void print_input(Input* i);
 
