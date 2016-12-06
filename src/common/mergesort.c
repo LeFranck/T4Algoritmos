@@ -25,7 +25,6 @@ int** mergesort(int** L, int n)
 		l1 = mergesort(l1,n1);
 		l2 = mergesort(l2,n2);
 		int** l3 = merge(l1,l2,n1,n2);
-		print_l(l3,n1+n2);
 		free(l1);
 		free(l2);
 		return l3;
@@ -53,7 +52,7 @@ int** merge(int** l1, int** l2, int n1, int n2)
 			l3[k] = l1[i];
 			i++;
 		}else{
-			if(l1[i] - l2[j] <= 0)
+			if(l1[i] < l2[j])
 			{
 				l3[k] = l1[i];
 				i++;
