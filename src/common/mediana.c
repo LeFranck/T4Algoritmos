@@ -21,7 +21,6 @@ int** calcular_mediana(int** L, double n1)
 		retorno[0] = 1;
 		int uuu = round(ceil(n1/2));
 		retorno[1] = l1[uuu-1];
-		//retorno[1] = l1[(n/2)+n%2];
 		return retorno;
 	}else{
 		int largo = get_largo_R(n1);
@@ -105,8 +104,8 @@ int** calcular_mediana(int** L, double n1)
         print_l(S, largo_s);
         printf("\nLista ordenada ^^^^^\n");
       }
-      printf("largo de s %d\n", largo_s );
-      printf("d y u: %d y %d \n", d, u );
+      printf("Length of s %d\n", largo_s );
+      printf("d and u: %d and %d \n", d, u );
 			retorno[0] = 1;
 			int index_final = n/2 + n%2 - md;
 			retorno[1] = S[index_final];

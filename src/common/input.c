@@ -20,8 +20,6 @@ void fill_input(Input* i, char* filename)
 		fscanf(fr,"%d %s",&param,Basura);
 		i->L[j] = param;
 	}
-	fscanf(fr,"%d",&param);
-	i->k = param;
 	fclose(fr);
 }
 

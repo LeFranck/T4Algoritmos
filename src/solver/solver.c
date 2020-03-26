@@ -24,8 +24,8 @@ int main(int argc, int *argv[])
       int** resultado = calcular_mediana(input->L,c2);
       contador = contador + 1;
     }
-		printf("La mediana es %d\n", resultado[1]);
-    printf("El algoritmo tuvo que correr %d veces\n",contador);
+		printf("The median is %d\n", resultado[1]);
+    printf("The algorithim had to run %d times\n",contador);
 		destroy_input(input);
 	}else{
 		Input* input = create_input(argv[1]);
